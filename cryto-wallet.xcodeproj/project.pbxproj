@@ -48,6 +48,10 @@
 		0EA36D8726ED203C009CBCED /* RealmRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA36D8626ED203C009CBCED /* RealmRepresentable.swift */; };
 		0EA36D8926ED2072009CBCED /* DomainConvertibleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA36D8826ED2072009CBCED /* DomainConvertibleType.swift */; };
 		0EA36D8B26ED24E3009CBCED /* FavoriteUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA36D8A26ED24E3009CBCED /* FavoriteUsecase.swift */; };
+		0EA36D9026EE41A8009CBCED /* CurrencyViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA36D8F26EE41A8009CBCED /* CurrencyViewModelTests.swift */; };
+		0EA36D9326EE42DB009CBCED /* MockCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA36D9226EE42DB009CBCED /* MockCurrency.swift */; };
+		0EA36D9926EE544D009CBCED /* CurrencyUsecaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA36D9826EE544D009CBCED /* CurrencyUsecaseTests.swift */; };
+		0EA36D9B26EE5616009CBCED /* FavoriteUsecaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA36D9A26EE5616009CBCED /* FavoriteUsecaseTests.swift */; };
 		93971D4C04594CB1B9C6E414 /* Pods_cryto_wallet_cryto_walletUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BF9140757E33E0030645E4B /* Pods_cryto_wallet_cryto_walletUITests.framework */; };
 		DC0652DF26DA44A9A2FE8811 /* Pods_cryto_walletTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47AC84086609EB0917C3F83E /* Pods_cryto_walletTests.framework */; };
 		F0934AC03596171A5BF2220F /* Pods_cryto_wallet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A99355D54DF11E1971116E62 /* Pods_cryto_wallet.framework */; };
@@ -118,6 +122,10 @@
 		0EA36D8626ED203C009CBCED /* RealmRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmRepresentable.swift; sourceTree = "<group>"; };
 		0EA36D8826ED2072009CBCED /* DomainConvertibleType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainConvertibleType.swift; sourceTree = "<group>"; };
 		0EA36D8A26ED24E3009CBCED /* FavoriteUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteUsecase.swift; sourceTree = "<group>"; };
+		0EA36D8F26EE41A8009CBCED /* CurrencyViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyViewModelTests.swift; sourceTree = "<group>"; };
+		0EA36D9226EE42DB009CBCED /* MockCurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCurrency.swift; sourceTree = "<group>"; };
+		0EA36D9826EE544D009CBCED /* CurrencyUsecaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyUsecaseTests.swift; sourceTree = "<group>"; };
+		0EA36D9A26EE5616009CBCED /* FavoriteUsecaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteUsecaseTests.swift; sourceTree = "<group>"; };
 		1B7904D056214ED9D9C5FE33 /* Pods-cryto-wallet-cryto-walletUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cryto-wallet-cryto-walletUITests.debug.xcconfig"; path = "Target Support Files/Pods-cryto-wallet-cryto-walletUITests/Pods-cryto-wallet-cryto-walletUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		47AC84086609EB0917C3F83E /* Pods_cryto_walletTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cryto_walletTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		59B32164D8BA8B890686FDD0 /* Pods-cryto-wallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cryto-wallet.release.xcconfig"; path = "Target Support Files/Pods-cryto-wallet/Pods-cryto-wallet.release.xcconfig"; sourceTree = "<group>"; };
@@ -193,6 +201,9 @@
 		0E65992326E9CE2800CB52FA /* cryto-walletTests */ = {
 			isa = PBXGroup;
 			children = (
+				0EA36D9126EE42BF009CBCED /* Mocks */,
+				0EA36D8E26EE4180009CBCED /* Presentation */,
+				0EA36D9626EE5411009CBCED /* Domain */,
 				0E65992426E9CE2800CB52FA /* cryto_walletTests.swift */,
 				0E65992626E9CE2800CB52FA /* Info.plist */,
 			);
@@ -386,6 +397,39 @@
 				0E65991B26E9CE2700CB52FA /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		0EA36D8E26EE4180009CBCED /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				0EA36D8F26EE41A8009CBCED /* CurrencyViewModelTests.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		0EA36D9126EE42BF009CBCED /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				0EA36D9226EE42DB009CBCED /* MockCurrency.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		0EA36D9626EE5411009CBCED /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				0EA36D9726EE541E009CBCED /* Usecases */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		0EA36D9726EE541E009CBCED /* Usecases */ = {
+			isa = PBXGroup;
+			children = (
+				0EA36D9826EE544D009CBCED /* CurrencyUsecaseTests.swift */,
+				0EA36D9A26EE5616009CBCED /* FavoriteUsecaseTests.swift */,
+			);
+			path = Usecases;
 			sourceTree = "<group>";
 		};
 		847860A19256EC6AE99810D9 /* Pods */ = {
@@ -713,7 +757,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EA36D9926EE544D009CBCED /* CurrencyUsecaseTests.swift in Sources */,
+				0EA36D9326EE42DB009CBCED /* MockCurrency.swift in Sources */,
+				0EA36D9B26EE5616009CBCED /* FavoriteUsecaseTests.swift in Sources */,
 				0E65992526E9CE2800CB52FA /* cryto_walletTests.swift in Sources */,
+				0EA36D9026EE41A8009CBCED /* CurrencyViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

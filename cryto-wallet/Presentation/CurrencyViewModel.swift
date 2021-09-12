@@ -43,7 +43,7 @@ final class DefaultCurrencyViewModel: CurrencyViewModel {
         self.cancelTimer()
     }
 
-    func createTimer() {
+    private func createTimer() {
         if timer == nil {
             let timer = Timer(timeInterval: 30.0,
                               target: self,
@@ -56,7 +56,7 @@ final class DefaultCurrencyViewModel: CurrencyViewModel {
         }
     }
 
-    func cancelTimer() {
+    private func cancelTimer() {
         timer?.invalidate()
         timer = nil
     }
@@ -132,6 +132,7 @@ extension DefaultCurrencyViewModel {
             self.currencies.value = self.datasource
             return
         }
+
         let filtered = self.filterCurrencies(with: text)
         self.currencies.value = filtered
     }

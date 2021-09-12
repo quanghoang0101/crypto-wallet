@@ -27,7 +27,6 @@ final class RealmDatasource<T: RealmRepresentable>: LocalDatasourceProtocol wher
 
     init(configuration: Realm.Configuration) {
         self.configuration = configuration
-        print("File 📁 url: \(RLMRealmPathForFile("default.realm"))")
     }
 
     func queryAll() -> [T] {
