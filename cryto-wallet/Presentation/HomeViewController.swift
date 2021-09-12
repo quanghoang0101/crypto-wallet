@@ -34,6 +34,11 @@ class HomeViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
 
+    deinit {
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = R.string.localizable.market()
@@ -52,13 +57,13 @@ class HomeViewController: UIViewController {
 
         let notificationCenter = NotificationCenter.default
         notificationCenter.addObserver(
-          forName: UIResponder.keyboardWillChangeFrameNotification,
-          object: nil, queue: .main) { (notification) in
+            forName: UIResponder.keyboardWillChangeFrameNotification,
+            object: nil, queue: .main) { (notification) in
             self.handleKeyboard(notification: notification)
         }
         notificationCenter.addObserver(
-          forName: UIResponder.keyboardWillHideNotification,
-          object: nil, queue: .main) { (notification) in
+            forName: UIResponder.keyboardWillHideNotification,
+            object: nil, queue: .main) { (notification) in
             self.handleKeyboard(notification: notification)
         }
 
@@ -69,22 +74,25 @@ class HomeViewController: UIViewController {
     }
 
     func handleKeyboard(notification: Notification) {
-      guard notification.name == UIResponder.keyboardWillChangeFrameNotification else {
-        tableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
-        return
-      }
+        guard notification.name == UIResponder.keyboardWillChangeFrameNotification else {
+            self.tableView.contentInset = .zero
+            self.tableView.scrollIndicatorInsets = .zero
+            return
+        }
 
-      guard
-        let info = notification.userInfo,
-        let keyboardFrame = info[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue
+        guard
+            let info = notification.userInfo,
+            let keyboardFrame = info[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue
         else {
-          return
-      }
+            return
+        }
 
-      let keyboardHeight = keyboardFrame.cgRectValue.size.height
-      UIView.animate(withDuration: 0.1, animations: { () -> Void in
-        self.tableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: keyboardHeight, right: 0)
-      })
+        let keyboardHeight = keyboardFrame.cgRectValue.size.height
+        UIView.animate(withDuration: 0.1, animations: { [weak self] in
+            let insets = UIEdgeInsets(top: 0, left: 0, bottom: keyboardHeight, right: 0)
+            self?.tableView.contentInset = insets
+            self?.tableView.scrollIndicatorInsets = insets
+        })
     }
 
 }
