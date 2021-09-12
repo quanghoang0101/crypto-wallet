@@ -1,0 +1,1047 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0E65990E26E9CE2200CB52FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E65990D26E9CE2200CB52FA /* AppDelegate.swift */; };
+		0E65991526E9CE2200CB52FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E65991326E9CE2200CB52FA /* Main.storyboard */; };
+		0E65991726E9CE2700CB52FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E65991626E9CE2700CB52FA /* Assets.xcassets */; };
+		0E65991A26E9CE2700CB52FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E65991826E9CE2700CB52FA /* LaunchScreen.storyboard */; };
+		0E65992526E9CE2800CB52FA /* cryto_walletTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E65992426E9CE2800CB52FA /* cryto_walletTests.swift */; };
+		0E65993026E9CE2800CB52FA /* cryto_walletUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E65992F26E9CE2800CB52FA /* cryto_walletUITests.swift */; };
+		0EA36D3926EA5911009CBCED /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA36D3826EA5911009CBCED /* HomeViewController.swift */; };
+		0EA36D3B26EA5927009CBCED /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA36D3A26EA5927009CBCED /* FavoriteViewController.swift */; };
+		0EA36D3E26EA6B7C009CBCED /* CryptoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA36D3D26EA6B7C009CBCED /* CryptoTableViewCell.swift */; };
+		0EA36D4126EA6C39009CBCED /* NSObject+ClassName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA36D4026EA6C39009CBCED /* NSObject+ClassName.swift */; };
+		0EA36D4326EA6FF1009CBCED /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA36D4226EA6FF1009CBCED /* UIColor+Hex.swift */; };
+		0EA36D4526EA70F3009CBCED /* UIView+Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA36D4426EA70F3009CBCED /* UIView+Border.swift */; };
+		0EA36D4B26EA8497009CBCED /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0EA36D4D26EA8497009CBCED /* Localizable.strings */; };
+		0EA36D4F26EA84F7009CBCED /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA36D4E26EA84F7009CBCED /* R.generated.swift */; };
+		0EA36D5126EBB081009CBCED /* CurrencyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA36D5026EBB081009CBCED /* CurrencyModel.swift */; };
+		0EA36D5526EBBEC3009CBCED /* URLSessionProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA36D5426EBBEC3009CBCED /* URLSessionProvider.swift */; };
+		0EA36D5726EBBEFE009CBCED /* ServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA36D5626EBBEFE009CBCED /* ServiceProtocol.swift */; };
+		0EA36D5926EBBF2B009CBCED /* ProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA36D5826EBBF2B009CBCED /* ProviderProtocol.swift */; };
+		0EA36D5B26EBBF53009CBCED /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA36D5A26EBBF53009CBCED /* URLSessionProtocol.swift */; };
+		0EA36D5F26EBBFC4009CBCED /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA36D5E26EBBFC4009CBCED /* HTTPMethod.swift */; };
+		0EA36D6126EBBFEA009CBCED /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA36D6026EBBFEA009CBCED /* NetworkError.swift */; };
+		0EA36D6326EBC007009CBCED /* NetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA36D6226EBC007009CBCED /* NetworkResponse.swift */; };
+		0EA36D6526EBC025009CBCED /* ParametersEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA36D6426EBC025009CBCED /* ParametersEncoding.swift */; };
+		0EA36D6726EBC04B009CBCED /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA36D6626EBC04B009CBCED /* Task.swift */; };
+		0EA36D6A26EBC0A9009CBCED /* URLRequestExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA36D6926EBC0A9009CBCED /* URLRequestExtension.swift */; };
+		0EA36D6C26EBC0CD009CBCED /* URLComponentsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA36D6B26EBC0CD009CBCED /* URLComponentsExtension.swift */; };
+		0EA36D6E26EC5D73009CBCED /* CurrencyUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA36D6D26EC5D73009CBCED /* CurrencyUsecase.swift */; };
+		0EA36D7026EC5DBA009CBCED /* CurrencyEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA36D6F26EC5DBA009CBCED /* CurrencyEntity.swift */; };
+		0EA36D7226EC624C009CBCED /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA36D7126EC624C009CBCED /* Reusable.swift */; };
+		0EA36D7426EC657B009CBCED /* CurrencyRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA36D7326EC657B009CBCED /* CurrencyRepository.swift */; };
+		0EA36D7626EC65FC009CBCED /* CurrencyRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA36D7526EC65FC009CBCED /* CurrencyRepositoryImpl.swift */; };
+		0EA36D7826ECAFC1009CBCED /* CurrencyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA36D7726ECAFC1009CBCED /* CurrencyService.swift */; };
+		0EA36D7B26ECB624009CBCED /* CurrencyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA36D7A26ECB624009CBCED /* CurrencyViewModel.swift */; };
+		0EA36D7D26ECE734009CBCED /* UsecaseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA36D7C26ECE734009CBCED /* UsecaseProvider.swift */; };
+		0EA36D7F26ECF224009CBCED /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA36D7E26ECF224009CBCED /* Box.swift */; };
+		0EA36D8126ED0BC2009CBCED /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA36D8026ED0BC2009CBCED /* Application.swift */; };
+		0EA36D8326ED1229009CBCED /* RealmDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA36D8226ED1229009CBCED /* RealmDatasource.swift */; };
+		0EA36D8526ED1612009CBCED /* RMCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA36D8426ED1612009CBCED /* RMCurrency.swift */; };
+		0EA36D8726ED203C009CBCED /* RealmRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA36D8626ED203C009CBCED /* RealmRepresentable.swift */; };
+		0EA36D8926ED2072009CBCED /* DomainConvertibleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA36D8826ED2072009CBCED /* DomainConvertibleType.swift */; };
+		0EA36D8B26ED24E3009CBCED /* FavoriteUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA36D8A26ED24E3009CBCED /* FavoriteUsecase.swift */; };
+		93971D4C04594CB1B9C6E414 /* Pods_cryto_wallet_cryto_walletUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BF9140757E33E0030645E4B /* Pods_cryto_wallet_cryto_walletUITests.framework */; };
+		DC0652DF26DA44A9A2FE8811 /* Pods_cryto_walletTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47AC84086609EB0917C3F83E /* Pods_cryto_walletTests.framework */; };
+		F0934AC03596171A5BF2220F /* Pods_cryto_wallet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A99355D54DF11E1971116E62 /* Pods_cryto_wallet.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0E65992126E9CE2800CB52FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0E65990226E9CE2200CB52FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0E65990926E9CE2200CB52FA;
+			remoteInfo = "cryto-wallet";
+		};
+		0E65992C26E9CE2800CB52FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0E65990226E9CE2200CB52FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0E65990926E9CE2200CB52FA;
+			remoteInfo = "cryto-wallet";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0E65990A26E9CE2200CB52FA /* cryto-wallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cryto-wallet.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E65990D26E9CE2200CB52FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0E65991426E9CE2200CB52FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0E65991626E9CE2700CB52FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0E65991926E9CE2700CB52FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0E65991B26E9CE2700CB52FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E65992026E9CE2800CB52FA /* cryto-walletTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "cryto-walletTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E65992426E9CE2800CB52FA /* cryto_walletTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cryto_walletTests.swift; sourceTree = "<group>"; };
+		0E65992626E9CE2800CB52FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E65992B26E9CE2800CB52FA /* cryto-walletUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "cryto-walletUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E65992F26E9CE2800CB52FA /* cryto_walletUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cryto_walletUITests.swift; sourceTree = "<group>"; };
+		0E65993126E9CE2800CB52FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0EA36D3826EA5911009CBCED /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		0EA36D3A26EA5927009CBCED /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
+		0EA36D3D26EA6B7C009CBCED /* CryptoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTableViewCell.swift; sourceTree = "<group>"; };
+		0EA36D4026EA6C39009CBCED /* NSObject+ClassName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+ClassName.swift"; sourceTree = "<group>"; };
+		0EA36D4226EA6FF1009CBCED /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
+		0EA36D4426EA70F3009CBCED /* UIView+Border.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Border.swift"; sourceTree = "<group>"; };
+		0EA36D4C26EA8497009CBCED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		0EA36D4E26EA84F7009CBCED /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = R.generated.swift; path = "cryto-wallet/Resources/R.generated.swift"; sourceTree = SOURCE_ROOT; };
+		0EA36D5026EBB081009CBCED /* CurrencyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyModel.swift; sourceTree = "<group>"; };
+		0EA36D5426EBBEC3009CBCED /* URLSessionProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionProvider.swift; sourceTree = "<group>"; };
+		0EA36D5626EBBEFE009CBCED /* ServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProtocol.swift; sourceTree = "<group>"; };
+		0EA36D5826EBBF2B009CBCED /* ProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderProtocol.swift; sourceTree = "<group>"; };
+		0EA36D5A26EBBF53009CBCED /* URLSessionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionProtocol.swift; sourceTree = "<group>"; };
+		0EA36D5E26EBBFC4009CBCED /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		0EA36D6026EBBFEA009CBCED /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		0EA36D6226EBC007009CBCED /* NetworkResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResponse.swift; sourceTree = "<group>"; };
+		0EA36D6426EBC025009CBCED /* ParametersEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParametersEncoding.swift; sourceTree = "<group>"; };
+		0EA36D6626EBC04B009CBCED /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		0EA36D6926EBC0A9009CBCED /* URLRequestExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestExtension.swift; sourceTree = "<group>"; };
+		0EA36D6B26EBC0CD009CBCED /* URLComponentsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLComponentsExtension.swift; sourceTree = "<group>"; };
+		0EA36D6D26EC5D73009CBCED /* CurrencyUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyUsecase.swift; sourceTree = "<group>"; };
+		0EA36D6F26EC5DBA009CBCED /* CurrencyEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyEntity.swift; sourceTree = "<group>"; };
+		0EA36D7126EC624C009CBCED /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
+		0EA36D7326EC657B009CBCED /* CurrencyRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyRepository.swift; sourceTree = "<group>"; };
+		0EA36D7526EC65FC009CBCED /* CurrencyRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyRepositoryImpl.swift; sourceTree = "<group>"; };
+		0EA36D7726ECAFC1009CBCED /* CurrencyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyService.swift; sourceTree = "<group>"; };
+		0EA36D7A26ECB624009CBCED /* CurrencyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyViewModel.swift; sourceTree = "<group>"; };
+		0EA36D7C26ECE734009CBCED /* UsecaseProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsecaseProvider.swift; sourceTree = "<group>"; };
+		0EA36D7E26ECF224009CBCED /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
+		0EA36D8026ED0BC2009CBCED /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
+		0EA36D8226ED1229009CBCED /* RealmDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDatasource.swift; sourceTree = "<group>"; };
+		0EA36D8426ED1612009CBCED /* RMCurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMCurrency.swift; sourceTree = "<group>"; };
+		0EA36D8626ED203C009CBCED /* RealmRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmRepresentable.swift; sourceTree = "<group>"; };
+		0EA36D8826ED2072009CBCED /* DomainConvertibleType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainConvertibleType.swift; sourceTree = "<group>"; };
+		0EA36D8A26ED24E3009CBCED /* FavoriteUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteUsecase.swift; sourceTree = "<group>"; };
+		1B7904D056214ED9D9C5FE33 /* Pods-cryto-wallet-cryto-walletUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cryto-wallet-cryto-walletUITests.debug.xcconfig"; path = "Target Support Files/Pods-cryto-wallet-cryto-walletUITests/Pods-cryto-wallet-cryto-walletUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		47AC84086609EB0917C3F83E /* Pods_cryto_walletTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cryto_walletTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		59B32164D8BA8B890686FDD0 /* Pods-cryto-wallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cryto-wallet.release.xcconfig"; path = "Target Support Files/Pods-cryto-wallet/Pods-cryto-wallet.release.xcconfig"; sourceTree = "<group>"; };
+		787DC9C824EDD05F81BF4C61 /* Pods-cryto-walletTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cryto-walletTests.debug.xcconfig"; path = "Target Support Files/Pods-cryto-walletTests/Pods-cryto-walletTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7BF9140757E33E0030645E4B /* Pods_cryto_wallet_cryto_walletUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cryto_wallet_cryto_walletUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A99355D54DF11E1971116E62 /* Pods_cryto_wallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cryto_wallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2B26C18B88AF7CBCFB555D1 /* Pods-cryto-wallet-cryto-walletUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cryto-wallet-cryto-walletUITests.release.xcconfig"; path = "Target Support Files/Pods-cryto-wallet-cryto-walletUITests/Pods-cryto-wallet-cryto-walletUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CD642178B0950E4EFBE43A28 /* Pods-cryto-walletTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cryto-walletTests.release.xcconfig"; path = "Target Support Files/Pods-cryto-walletTests/Pods-cryto-walletTests.release.xcconfig"; sourceTree = "<group>"; };
+		E8120435C42128B38701251D /* Pods-cryto-wallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cryto-wallet.debug.xcconfig"; path = "Target Support Files/Pods-cryto-wallet/Pods-cryto-wallet.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0E65990726E9CE2200CB52FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0934AC03596171A5BF2220F /* Pods_cryto_wallet.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E65991D26E9CE2800CB52FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC0652DF26DA44A9A2FE8811 /* Pods_cryto_walletTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E65992826E9CE2800CB52FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93971D4C04594CB1B9C6E414 /* Pods_cryto_wallet_cryto_walletUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0E65990126E9CE2200CB52FA = {
+			isa = PBXGroup;
+			children = (
+				0E65990C26E9CE2200CB52FA /* cryto-wallet */,
+				0E65992326E9CE2800CB52FA /* cryto-walletTests */,
+				0E65992E26E9CE2800CB52FA /* cryto-walletUITests */,
+				0E65990B26E9CE2200CB52FA /* Products */,
+				847860A19256EC6AE99810D9 /* Pods */,
+				A9E216D1CA138B2B92345661 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0E65990B26E9CE2200CB52FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0E65990A26E9CE2200CB52FA /* cryto-wallet.app */,
+				0E65992026E9CE2800CB52FA /* cryto-walletTests.xctest */,
+				0E65992B26E9CE2800CB52FA /* cryto-walletUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0E65990C26E9CE2200CB52FA /* cryto-wallet */ = {
+			isa = PBXGroup;
+			children = (
+				0EA36D8D26EDF15A009CBCED /* Resources */,
+				0EA36D2B26EA4C7C009CBCED /* Presentation */,
+				0EA36D2C26EA4C93009CBCED /* Domain */,
+				0EA36D2D26EA4C9F009CBCED /* Data */,
+			);
+			path = "cryto-wallet";
+			sourceTree = "<group>";
+		};
+		0E65992326E9CE2800CB52FA /* cryto-walletTests */ = {
+			isa = PBXGroup;
+			children = (
+				0E65992426E9CE2800CB52FA /* cryto_walletTests.swift */,
+				0E65992626E9CE2800CB52FA /* Info.plist */,
+			);
+			path = "cryto-walletTests";
+			sourceTree = "<group>";
+		};
+		0E65992E26E9CE2800CB52FA /* cryto-walletUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0E65992F26E9CE2800CB52FA /* cryto_walletUITests.swift */,
+				0E65993126E9CE2800CB52FA /* Info.plist */,
+			);
+			path = "cryto-walletUITests";
+			sourceTree = "<group>";
+		};
+		0EA36D2B26EA4C7C009CBCED /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				0EA36D8C26EDF11C009CBCED /* Common */,
+				0EA36D3F26EA6C19009CBCED /* Extensions */,
+				0EA36D3C26EA6B4C009CBCED /* Views */,
+				0EA36D3826EA5911009CBCED /* HomeViewController.swift */,
+				0EA36D3A26EA5927009CBCED /* FavoriteViewController.swift */,
+				0EA36D7A26ECB624009CBCED /* CurrencyViewModel.swift */,
+				0EA36D8026ED0BC2009CBCED /* Application.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		0EA36D2C26EA4C93009CBCED /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				0EA36D3526EA4D37009CBCED /* Repositories */,
+				0EA36D3326EA4D20009CBCED /* Entities */,
+				0EA36D3226EA4D18009CBCED /* Usecases */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		0EA36D2D26EA4C9F009CBCED /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				0EA36D3426EA4D29009CBCED /* Models */,
+				0EA36D3126EA4D08009CBCED /* RemoteDatasources */,
+				0EA36D3026EA4CE6009CBCED /* LocalDatasources */,
+				0EA36D2F26EA4CCD009CBCED /* Repositories */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		0EA36D2F26EA4CCD009CBCED /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				0EA36D7526EC65FC009CBCED /* CurrencyRepositoryImpl.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		0EA36D3026EA4CE6009CBCED /* LocalDatasources */ = {
+			isa = PBXGroup;
+			children = (
+				0EA36D8226ED1229009CBCED /* RealmDatasource.swift */,
+				0EA36D8426ED1612009CBCED /* RMCurrency.swift */,
+				0EA36D8626ED203C009CBCED /* RealmRepresentable.swift */,
+				0EA36D8826ED2072009CBCED /* DomainConvertibleType.swift */,
+			);
+			path = LocalDatasources;
+			sourceTree = "<group>";
+		};
+		0EA36D3126EA4D08009CBCED /* RemoteDatasources */ = {
+			isa = PBXGroup;
+			children = (
+				0EA36D7926ECB52F009CBCED /* Services */,
+				0EA36D6826EBC09A009CBCED /* Extensions */,
+				0EA36D5D26EBBFAF009CBCED /* Enums */,
+				0EA36D5C26EBBF6A009CBCED /* Protocols */,
+				0EA36D5426EBBEC3009CBCED /* URLSessionProvider.swift */,
+			);
+			path = RemoteDatasources;
+			sourceTree = "<group>";
+		};
+		0EA36D3226EA4D18009CBCED /* Usecases */ = {
+			isa = PBXGroup;
+			children = (
+				0EA36D6D26EC5D73009CBCED /* CurrencyUsecase.swift */,
+				0EA36D8A26ED24E3009CBCED /* FavoriteUsecase.swift */,
+				0EA36D7C26ECE734009CBCED /* UsecaseProvider.swift */,
+			);
+			path = Usecases;
+			sourceTree = "<group>";
+		};
+		0EA36D3326EA4D20009CBCED /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				0EA36D6F26EC5DBA009CBCED /* CurrencyEntity.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		0EA36D3426EA4D29009CBCED /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0EA36D5026EBB081009CBCED /* CurrencyModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0EA36D3526EA4D37009CBCED /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				0EA36D7326EC657B009CBCED /* CurrencyRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		0EA36D3C26EA6B4C009CBCED /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0EA36D3D26EA6B7C009CBCED /* CryptoTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0EA36D3F26EA6C19009CBCED /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0EA36D4026EA6C39009CBCED /* NSObject+ClassName.swift */,
+				0EA36D4226EA6FF1009CBCED /* UIColor+Hex.swift */,
+				0EA36D4426EA70F3009CBCED /* UIView+Border.swift */,
+				0EA36D7126EC624C009CBCED /* Reusable.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0EA36D5C26EBBF6A009CBCED /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				0EA36D5626EBBEFE009CBCED /* ServiceProtocol.swift */,
+				0EA36D5826EBBF2B009CBCED /* ProviderProtocol.swift */,
+				0EA36D5A26EBBF53009CBCED /* URLSessionProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		0EA36D5D26EBBFAF009CBCED /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				0EA36D5E26EBBFC4009CBCED /* HTTPMethod.swift */,
+				0EA36D6026EBBFEA009CBCED /* NetworkError.swift */,
+				0EA36D6226EBC007009CBCED /* NetworkResponse.swift */,
+				0EA36D6426EBC025009CBCED /* ParametersEncoding.swift */,
+				0EA36D6626EBC04B009CBCED /* Task.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		0EA36D6826EBC09A009CBCED /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0EA36D6926EBC0A9009CBCED /* URLRequestExtension.swift */,
+				0EA36D6B26EBC0CD009CBCED /* URLComponentsExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0EA36D7926ECB52F009CBCED /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0EA36D7726ECAFC1009CBCED /* CurrencyService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		0EA36D8C26EDF11C009CBCED /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				0EA36D7E26ECF224009CBCED /* Box.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		0EA36D8D26EDF15A009CBCED /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0E65990D26E9CE2200CB52FA /* AppDelegate.swift */,
+				0EA36D4D26EA8497009CBCED /* Localizable.strings */,
+				0EA36D4E26EA84F7009CBCED /* R.generated.swift */,
+				0E65991326E9CE2200CB52FA /* Main.storyboard */,
+				0E65991626E9CE2700CB52FA /* Assets.xcassets */,
+				0E65991826E9CE2700CB52FA /* LaunchScreen.storyboard */,
+				0E65991B26E9CE2700CB52FA /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		847860A19256EC6AE99810D9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E8120435C42128B38701251D /* Pods-cryto-wallet.debug.xcconfig */,
+				59B32164D8BA8B890686FDD0 /* Pods-cryto-wallet.release.xcconfig */,
+				1B7904D056214ED9D9C5FE33 /* Pods-cryto-wallet-cryto-walletUITests.debug.xcconfig */,
+				C2B26C18B88AF7CBCFB555D1 /* Pods-cryto-wallet-cryto-walletUITests.release.xcconfig */,
+				787DC9C824EDD05F81BF4C61 /* Pods-cryto-walletTests.debug.xcconfig */,
+				CD642178B0950E4EFBE43A28 /* Pods-cryto-walletTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A9E216D1CA138B2B92345661 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A99355D54DF11E1971116E62 /* Pods_cryto_wallet.framework */,
+				7BF9140757E33E0030645E4B /* Pods_cryto_wallet_cryto_walletUITests.framework */,
+				47AC84086609EB0917C3F83E /* Pods_cryto_walletTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0E65990926E9CE2200CB52FA /* cryto-wallet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0E65993426E9CE2800CB52FA /* Build configuration list for PBXNativeTarget "cryto-wallet" */;
+			buildPhases = (
+				1BA5A3A565A1EE072F4B0E0F /* [CP] Check Pods Manifest.lock */,
+				0EA36D4826EA83B7009CBCED /* ShellScript */,
+				0E65990626E9CE2200CB52FA /* Sources */,
+				0E65990726E9CE2200CB52FA /* Frameworks */,
+				0E65990826E9CE2200CB52FA /* Resources */,
+				0E01663924F1E679E5122740 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "cryto-wallet";
+			productName = "cryto-wallet";
+			productReference = 0E65990A26E9CE2200CB52FA /* cryto-wallet.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0E65991F26E9CE2800CB52FA /* cryto-walletTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0E65993726E9CE2800CB52FA /* Build configuration list for PBXNativeTarget "cryto-walletTests" */;
+			buildPhases = (
+				F4D6EC2DC5105364AA0ED196 /* [CP] Check Pods Manifest.lock */,
+				0E65991C26E9CE2800CB52FA /* Sources */,
+				0E65991D26E9CE2800CB52FA /* Frameworks */,
+				0E65991E26E9CE2800CB52FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0E65992226E9CE2800CB52FA /* PBXTargetDependency */,
+			);
+			name = "cryto-walletTests";
+			productName = "cryto-walletTests";
+			productReference = 0E65992026E9CE2800CB52FA /* cryto-walletTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0E65992A26E9CE2800CB52FA /* cryto-walletUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0E65993A26E9CE2800CB52FA /* Build configuration list for PBXNativeTarget "cryto-walletUITests" */;
+			buildPhases = (
+				A22E8A2BEACF36B8620CE597 /* [CP] Check Pods Manifest.lock */,
+				0E65992726E9CE2800CB52FA /* Sources */,
+				0E65992826E9CE2800CB52FA /* Frameworks */,
+				0E65992926E9CE2800CB52FA /* Resources */,
+				44985CC4E4BA83F211C9734A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0E65992D26E9CE2800CB52FA /* PBXTargetDependency */,
+			);
+			name = "cryto-walletUITests";
+			productName = "cryto-walletUITests";
+			productReference = 0E65992B26E9CE2800CB52FA /* cryto-walletUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0E65990226E9CE2200CB52FA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "Phan Quang Hoang";
+				TargetAttributes = {
+					0E65990926E9CE2200CB52FA = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					0E65991F26E9CE2800CB52FA = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 0E65990926E9CE2200CB52FA;
+					};
+					0E65992A26E9CE2800CB52FA = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 0E65990926E9CE2200CB52FA;
+					};
+				};
+			};
+			buildConfigurationList = 0E65990526E9CE2200CB52FA /* Build configuration list for PBXProject "cryto-wallet" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0E65990126E9CE2200CB52FA;
+			productRefGroup = 0E65990B26E9CE2200CB52FA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0E65990926E9CE2200CB52FA /* cryto-wallet */,
+				0E65991F26E9CE2800CB52FA /* cryto-walletTests */,
+				0E65992A26E9CE2800CB52FA /* cryto-walletUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0E65990826E9CE2200CB52FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E65991A26E9CE2700CB52FA /* LaunchScreen.storyboard in Resources */,
+				0EA36D4B26EA8497009CBCED /* Localizable.strings in Resources */,
+				0E65991726E9CE2700CB52FA /* Assets.xcassets in Resources */,
+				0E65991526E9CE2200CB52FA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E65991E26E9CE2800CB52FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E65992926E9CE2800CB52FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0E01663924F1E679E5122740 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-cryto-wallet/Pods-cryto-wallet-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-cryto-wallet/Pods-cryto-wallet-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-cryto-wallet/Pods-cryto-wallet-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0EA36D4826EA83B7009CBCED /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$SRCROOT/cryto-wallet/Resources/R.generated.swift",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/cryto-wallet/Resources/R.generated.swift\"\n";
+		};
+		1BA5A3A565A1EE072F4B0E0F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-cryto-wallet-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		44985CC4E4BA83F211C9734A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-cryto-wallet-cryto-walletUITests/Pods-cryto-wallet-cryto-walletUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-cryto-wallet-cryto-walletUITests/Pods-cryto-wallet-cryto-walletUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-cryto-wallet-cryto-walletUITests/Pods-cryto-wallet-cryto-walletUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A22E8A2BEACF36B8620CE597 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-cryto-wallet-cryto-walletUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4D6EC2DC5105364AA0ED196 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-cryto-walletTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0E65990626E9CE2200CB52FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EA36D8B26ED24E3009CBCED /* FavoriteUsecase.swift in Sources */,
+				0EA36D8126ED0BC2009CBCED /* Application.swift in Sources */,
+				0EA36D3926EA5911009CBCED /* HomeViewController.swift in Sources */,
+				0EA36D4326EA6FF1009CBCED /* UIColor+Hex.swift in Sources */,
+				0EA36D4526EA70F3009CBCED /* UIView+Border.swift in Sources */,
+				0EA36D7B26ECB624009CBCED /* CurrencyViewModel.swift in Sources */,
+				0EA36D5526EBBEC3009CBCED /* URLSessionProvider.swift in Sources */,
+				0EA36D7826ECAFC1009CBCED /* CurrencyService.swift in Sources */,
+				0EA36D7426EC657B009CBCED /* CurrencyRepository.swift in Sources */,
+				0EA36D7226EC624C009CBCED /* Reusable.swift in Sources */,
+				0EA36D8926ED2072009CBCED /* DomainConvertibleType.swift in Sources */,
+				0EA36D5726EBBEFE009CBCED /* ServiceProtocol.swift in Sources */,
+				0EA36D7626EC65FC009CBCED /* CurrencyRepositoryImpl.swift in Sources */,
+				0EA36D3E26EA6B7C009CBCED /* CryptoTableViewCell.swift in Sources */,
+				0EA36D7F26ECF224009CBCED /* Box.swift in Sources */,
+				0EA36D6A26EBC0A9009CBCED /* URLRequestExtension.swift in Sources */,
+				0E65990E26E9CE2200CB52FA /* AppDelegate.swift in Sources */,
+				0EA36D5126EBB081009CBCED /* CurrencyModel.swift in Sources */,
+				0EA36D5926EBBF2B009CBCED /* ProviderProtocol.swift in Sources */,
+				0EA36D5F26EBBFC4009CBCED /* HTTPMethod.swift in Sources */,
+				0EA36D8726ED203C009CBCED /* RealmRepresentable.swift in Sources */,
+				0EA36D5B26EBBF53009CBCED /* URLSessionProtocol.swift in Sources */,
+				0EA36D6C26EBC0CD009CBCED /* URLComponentsExtension.swift in Sources */,
+				0EA36D4F26EA84F7009CBCED /* R.generated.swift in Sources */,
+				0EA36D8526ED1612009CBCED /* RMCurrency.swift in Sources */,
+				0EA36D6326EBC007009CBCED /* NetworkResponse.swift in Sources */,
+				0EA36D6126EBBFEA009CBCED /* NetworkError.swift in Sources */,
+				0EA36D3B26EA5927009CBCED /* FavoriteViewController.swift in Sources */,
+				0EA36D6E26EC5D73009CBCED /* CurrencyUsecase.swift in Sources */,
+				0EA36D6526EBC025009CBCED /* ParametersEncoding.swift in Sources */,
+				0EA36D6726EBC04B009CBCED /* Task.swift in Sources */,
+				0EA36D4126EA6C39009CBCED /* NSObject+ClassName.swift in Sources */,
+				0EA36D7D26ECE734009CBCED /* UsecaseProvider.swift in Sources */,
+				0EA36D7026EC5DBA009CBCED /* CurrencyEntity.swift in Sources */,
+				0EA36D8326ED1229009CBCED /* RealmDatasource.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E65991C26E9CE2800CB52FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E65992526E9CE2800CB52FA /* cryto_walletTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E65992726E9CE2800CB52FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E65993026E9CE2800CB52FA /* cryto_walletUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0E65992226E9CE2800CB52FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0E65990926E9CE2200CB52FA /* cryto-wallet */;
+			targetProxy = 0E65992126E9CE2800CB52FA /* PBXContainerItemProxy */;
+		};
+		0E65992D26E9CE2800CB52FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0E65990926E9CE2200CB52FA /* cryto-wallet */;
+			targetProxy = 0E65992C26E9CE2800CB52FA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0E65991326E9CE2200CB52FA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0E65991426E9CE2200CB52FA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0E65991826E9CE2700CB52FA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0E65991926E9CE2700CB52FA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		0EA36D4D26EA8497009CBCED /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0EA36D4C26EA8497009CBCED /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0E65993226E9CE2800CB52FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0E65993326E9CE2800CB52FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0E65993526E9CE2800CB52FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8120435C42128B38701251D /* Pods-cryto-wallet.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "cryto-wallet/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.phanquanghoang.mobile.cryto-wallet";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		0E65993626E9CE2800CB52FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59B32164D8BA8B890686FDD0 /* Pods-cryto-wallet.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "cryto-wallet/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.phanquanghoang.mobile.cryto-wallet";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		0E65993826E9CE2800CB52FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 787DC9C824EDD05F81BF4C61 /* Pods-cryto-walletTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "cryto-walletTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.phanquanghoang.mobile.cryto-walletTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/cryto-wallet.app/cryto-wallet";
+			};
+			name = Debug;
+		};
+		0E65993926E9CE2800CB52FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD642178B0950E4EFBE43A28 /* Pods-cryto-walletTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "cryto-walletTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.phanquanghoang.mobile.cryto-walletTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/cryto-wallet.app/cryto-wallet";
+			};
+			name = Release;
+		};
+		0E65993B26E9CE2800CB52FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B7904D056214ED9D9C5FE33 /* Pods-cryto-wallet-cryto-walletUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "cryto-walletUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.phanquanghoang.mobile.cryto-walletUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "cryto-wallet";
+			};
+			name = Debug;
+		};
+		0E65993C26E9CE2800CB52FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2B26C18B88AF7CBCFB555D1 /* Pods-cryto-wallet-cryto-walletUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "cryto-walletUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.phanquanghoang.mobile.cryto-walletUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "cryto-wallet";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0E65990526E9CE2200CB52FA /* Build configuration list for PBXProject "cryto-wallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E65993226E9CE2800CB52FA /* Debug */,
+				0E65993326E9CE2800CB52FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0E65993426E9CE2800CB52FA /* Build configuration list for PBXNativeTarget "cryto-wallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E65993526E9CE2800CB52FA /* Debug */,
+				0E65993626E9CE2800CB52FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0E65993726E9CE2800CB52FA /* Build configuration list for PBXNativeTarget "cryto-walletTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E65993826E9CE2800CB52FA /* Debug */,
+				0E65993926E9CE2800CB52FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0E65993A26E9CE2800CB52FA /* Build configuration list for PBXNativeTarget "cryto-walletUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E65993B26E9CE2800CB52FA /* Debug */,
+				0E65993C26E9CE2800CB52FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0E65990226E9CE2200CB52FA /* Project object */;
+}

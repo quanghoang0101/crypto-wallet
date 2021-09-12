@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  cryto-wallet
+
+  Created by Hoang on 10/09/2021.
+  Copyright © 2021 Phan Quang Hoang. All rights reserved.
+*/
+
+"Market" = "Market";
+"Explore" = "Explore";
+"Favorite" = "Favorite";
+"Remove" = "Remove";
+"Search" = "Search...";
