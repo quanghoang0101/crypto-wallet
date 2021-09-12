@@ -1,6 +1,6 @@
 # crypto-wallet
 
-### Enviroments
+### Environments
 - Swift 5
 - CocoaPod 1.11.0
 - Xcode 12
