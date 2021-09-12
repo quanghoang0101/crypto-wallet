@@ -149,6 +149,4 @@ extension DefaultCurrencyViewModel {
 
         self.updateFavorites(with: datasource)
     }
-
-
 }
