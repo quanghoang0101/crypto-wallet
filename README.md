@@ -1,4 +1,5 @@
 # crypto-wallet
+![example workflow](https://github.com/quanghoang0101/crypto-wallet/actions/workflows/swift.yml/badge.svg)
 
 ### Environments
 - Swift 5
